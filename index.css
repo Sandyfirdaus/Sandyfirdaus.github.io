@@ -1,0 +1,48 @@
+.msg {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    text-align: center; /* Center the text */
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .msg, .text {
+        font-size: 20px; /* Decrease font size on smaller screens */
+    }
+    
+    .image {
+        flex-direction: column; /* Change flex direction to column on smaller screens */
+        height: auto;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
